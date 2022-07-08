@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img id="loader" src="images\loader.gif" width="200" alt="1">
+    <img id="guitar" src="images\fender.jpg" width="1000" alt="1" onload="loadFunction()">
+
+    <script>
+        function loadFunction() {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('guitar').style.display = 'inline-block';
+        }
+    </script> 
+</body>
+</html>
